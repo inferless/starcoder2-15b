@@ -1,18 +1,5 @@
-# Tutorial - Deploy Phi-2 using Inferless
-
-Check out [this tutorial](https://guides.inferless.com/how-to-finetune-quantize-and-inference-phi-2) which will guide you through the process of deploying a Phi-2 model using Inferless.
-
-## TL;DR - Deploy Phi-2 using Inferless:
-- Deployment of Deploy Phi-2 model using [vLLM](https://github.com/vllm-project/vllm).
-- By using the vLLM, you can expect an average latency of 1.34 sec using an A100 GPU(80GB).
-- Dependencies defined in inferless-runtime-config.yaml.
-- GitHub/GitLab template creation with app.py and config.yaml.
-- Model class in app.py with initialize, infer, and finalize functions.
-- Custom runtime creation with necessary system and Python packages.
-- Model import via GitHub with input/output parameters in JSON.
-- Recommended GPU: NVIDIA A100 for optimal performance.
-- Custom runtime selection in advanced configuration.
-- Final review and deployment on the Inferless platform.
+# StarCoder2-15B
+StarCoder2-15B model is a 15B parameter model trained on 600+ programming languages from The Stack v2, with opt-out requests excluded. The model uses Grouped Query Attention, a context window of 16,384 tokens with a sliding window attention of 4,096 tokens, and was trained using the Fill-in-the-Middle objective on 4+ trillion tokens.
 
 ---
 ## Prerequisites
